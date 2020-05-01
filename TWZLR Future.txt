@@ -1,0 +1,16 @@
+TWZLR Interface
+    Room for improvement:
+        - Add functionality to save and load part lists
+        - Add functionality to read base ranges directly from NCBI and not require user to input them (this is main bottleneck)
+        - Add functionality for ciruclar insertion into chromosome
+        - Add proper adapter functionality
+
+
+    Possible Errors:
+        - If user reopens setting configuration interface and makes changes, the parameters will not recheck and could throw an Errors
+        - range of insertion must have a lower integer in the first element of the tuple,
+        - index of homology arms could run off of index of chromosome throwing error
+        - base ranges for genes must have a lower integer in the first element of the tuple
+        - insertion of parameters of negative value anywhere will throw Error
+        - Sequencing algorithm can be finnicky 
+        - in main interface, placing indexes out of list range and attempting to add component will throw error
